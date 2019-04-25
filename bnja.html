@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<title>T&P</title>
+	<style>
+	#bck {
+  		height: 6%;
+  		background-color: red; 
+    	background-image: repeating-linear-gradient(#D3D3D3,#C0C0C0);
+	}
+	* {box-sizing: border-box}
+		body {font-family: Verdana, sans-serif; margin:0}
+		.mySlides {display: none}
+		img {vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  max-width: 100%;
+		  max-height: 40%;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 2%;
+		  margin-top: -3%;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 40%;
+		  transition: 0.6s ease;
+		  border-radius: 0 3% 3% 0;
+		  user-select: none;
+		}
+		.next {
+
+		  right: 0;
+		  border-radius: 3% 0 0 3%;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 100%;
+		  padding: 1% 12%;
+		  position: absolute;
+		  bottom: 2%;
+		  width: 100%;
+		  text-align: center;
+		}
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: .5% 1%;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+		  .prev, .next,.text {font-size: 11px}
+}
+	.btn {
+  		background-color:transparent;
+  		border: none;
+  		color: white;
+  		text-align: center;
+  		font-size: 100%;
+  		margin: 2% 5%;
+  		opacity: 1;
+  		transition: 0.3s;
+  		text-align: left;
+  		margin-left: 1%;
+		}
+	.btn:hover {opacity: 0.6;color: black;background-color: silver ;cursor: pointer; }
+span.c {
+	display: inline-block;
+  	margin: 4%;
+  	background-color: #B22222;
+  	width:33%;
+  	height:38%;
+  	border: 3px solid black;
+  	opacity: 0.9;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+  	float: right;
+	}
+
+span.cp {
+  	margin: 5%;
+  	font-weight: bold;
+  	color: #B22222;
+	}
+span.a {
+	display: inline-block;
+  	margin: 4%;
+  	background-color: #B22222;
+  	width:15%;
+  	height:20%;
+  	align-content: center;
+  	border: 3px solid black;
+  	opacity: 0.9;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+  	float: left;
+	}
+
+span.ap {
+  	margin: 5%;
+  	font-weight: bold;
+  	color: #B22222;
+	}
+span.b {
+	display: inline-block;
+  	margin: 4%;
+  	background-color: #B22222;
+  	width:28%;
+  	height:36%;
+  	border: 3px solid black;
+  	opacity: 0.9;
+  	filter: alpha(opacity=60); /* For IE8 and earlier */
+  	float: left;
+	}
+
+span.bp {
+  	margin: 5%;
+  	font-weight: bold;
+  	color: white;
+	}
+</style>
+</head>
+<body>
+	<div id="bck">
+	<img src="logo_NITD.png" alt="national institute of technology, delhi" width="40%" height="4%">
+	<img src="Emblem_of_the_ROI.png" alt="national institute of technology, delhi" width="4%" height="4%">
+	<a href="https://nitdelhi.ac.in/?page_id=15878">
+	<button class="btn">About</button>
+    </a>
+    <a href="https://nitdelhi.ac.in/?page_id=11949">
+	<button class="btn">Message</button></a>
+	<a href="https://nitdelhi.ac.in/?page_id=13913">
+	<button class="btn">Contact us</button></a>
+	<a href="https://www.google.com/maps?ll=28.84298,77.104543&z=12&t=m&hl=en-US&gl=IN&mapclient=embed&daddr=National+Institute+of+Technology+Delhi+A-7+NIT+Delhi+road+Near+Satyawadi+Raja+Harish+Chandra+Hospital+Janakpuri+Institutional+Area,+Narela+New+Delhi,+Delhi+110040@28.8429798,77.1045429">
+	<button class="btn">Route</button></a>
+	<img src="indianflag-.jpg" alt="national institute of technology, delhi" width="6%" height="2%">
+</div>
+<marquee scrollamount="20">
+	<h1 style="text-align:center; text-shadow:blue; color: black;">TRAINING AND PLACEMENT CELL, NIT DELHI</h1>
+</marquee>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="nit1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="nit2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="nit3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="background">
+  <span class="c">
+ 	<p  style="text-align:center;background:white;margin:.1px;padding:12px"><b>SUGGESTIONS FOR T&P</b><br>
+ 		<input id="task" type="text" style="width:80%" placeholder="Suggestion"><button id="addbtn">Suggest</button></P>
+ 	<marquee direction="UP" height="300px">
+  <ul id="lists" style="color: white; font-family:italic">
+    
+  </ul>
+</marquee>
+ </span>
+  <span class="a">
+  <p style="text-align:center;background:white;margin:.1px;padding:4%"><b>LOGIN & SIGN UP</b></P>
+  	<a href="student.html"><button class="btn">Student Login </button></a><br>
+  	<a href="t&p.html"><button class="btn">T&P Staff Login</button></a><br>
+  	<a href="Company.html"><button class="btn">Company Login</button></a>
+  </span>
+  <span class="b">
+  <p style="text-align:center;background:white;margin:.1px;padding:2%"><b>NOTICE BOARD</b></p>
+  <marquee scrollamount:"1" direction="up" width="300px" height="330px">
+  <ul style="color: white; font-family: italic">
+    <li>Placement Sesion is going to begin from 01-08-2019</li>
+    <li>Students make sure to have your CVs ready</li>
+    <a href="https://www.thebalancecareers.com/curriculum-vitae-format-2060351"><li>Link for CV Formation:</a></li>
+  </ul>
+</marquee>
+   </span >
+ </div>
+<script type="text/javascript">
+	let taskbox = document.getElementById('task');
+	let confirm=document.getElementById('addbtn');
+	let listtask=document.getElementById('lists');
+	confirm.onclick=function(){
+		let taskvalue=taskbox.value;
+		let nitem=document.createElement('li')
+		nitem.innerText=taskvalue;
+		listtask.appendChild(nitem);
+	}
+</script>
+<br>
+<div style="background-color: white; height: 410px">
+</div>
+<div style="background-color: blue; height: 10%;margin-top: 2%">
+	<p style="font-size: 70%;color:white;text-align: center;margin-left:35% ">All Rights Reserved - Mahi Raman Kimmi Ankur</p></div>
+</body>
+</html>
